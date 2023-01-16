@@ -27,7 +27,6 @@ cd github-info-finder
 Use o comando abaixo para inicializar o cliente
 
 ```
-npm build
 npm start
 ```
 
