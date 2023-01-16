@@ -1,0 +1,20 @@
+<div *ngIf="repoinfo.length === 0;">
+  <h1>Esse usuário não contém nenhum repositório público disponível.</h1>
+</div>
+<div class="RepoContainerDiv" *ngFor="let Repo of repoinfo| sortByOrder"  >
+  <a class="RepoBoxLink" href="{{ Repo.html_url }}">
+    <div class="RepoBox">
+      <span class="RepoName">{{ Repo.name | titlecase}}</span>
+      <br />
+      <div class="RepoDescription">{{ Repo.description || "No Description" }}</div>
+      <div class="RepoLowerRow">
+        <mat-icon class="RepoStars">star</mat-icon>
+        <span class="RepoStarsCount">{{ Repo.stargazers_count }}</span>
+        <div class="RepoDivider">
+          <mat-icon class="RepoDividerIcon">circle</mat-icon>
+        </div>
+        <span class="RepoLastUpdateTime">{{ Repo.updated_at |dateAsAgo}}</span>
+      </div>
+    </div>
+  </a>
+</div>

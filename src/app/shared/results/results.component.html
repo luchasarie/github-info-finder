@@ -1,0 +1,14 @@
+<app-minisearchbox></app-minisearchbox>
+<div *ngIf="results.length === 0; else reposFound">
+  <h1>Usuário não existe!</h1>
+</div>
+<ng-template #reposFound>
+<div class="ResultsViewBox">
+  <div class="ResultsViewItemResults">
+    <app-userbox [userinfos]="results"></app-userbox>
+  </div>
+  <div class="ResultsViewItemRepoResults">
+    <app-repobox [repoinfo]="reposresults"></app-repobox>
+  </div>
+</div>
+</ng-template>

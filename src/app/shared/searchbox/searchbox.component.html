@@ -1,0 +1,12 @@
+<div class="SearchWrapper">
+  <div class="SearchInside">
+  <a class="SearchDevs"
+    ><span class="BlueText">Search</span
+    ><span class="PurpleText"> d_evs</span></a
+  >
+  <a class="SearchInputWrapper">
+    <div>
+  <input (keydown.enter)="search2()" class="SearchInput" [(ngModel)]="Search" placeholder="Pesquisar"/> <i class="SearchIcon"><mat-icon>search</mat-icon></i></div>
+  <a class="SearchButton" [routerLink]="'/results/' + Search">Search</a>
+</a></div>
+</div>

@@ -1,0 +1,104 @@
+
+.UserBoxContainer{
+  display:block;
+  align-items:flex-start ;
+  align-content: flex-start;
+  text-align: left;
+  padding: 16;
+  width: 400px;
+  color:#4A5568;
+}
+.UserInfo{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  height: 48px;
+}
+.UserPhoto{
+  border-radius: 1000px;
+  margin-right: 16px;
+  height: 48px;
+  width: 48px;
+}
+
+.UserInfoText{
+  height: 48;
+  display: block;
+  align-items: start;
+  color:black;
+}
+
+.UserName{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.UserTagDiv{
+  font-size: 14px;
+  font-weight:lighter;
+  color: #A0AEC0;
+}
+
+.UserDescriptionDiv{
+  margin-top: 16px;
+  margin-bottom:20px;
+}
+
+.UserInfoDivRow{
+  align-items: center;
+  font-size:14px;
+  font-weight:lighter;
+  display: flex;
+  flex-direction: row;
+  margin: 4px 0;
+}
+.UserIconImg{
+  align-self:center;
+  height:20px;
+  width:20px;
+  margin-right: 10px;
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.UserFollowerDiv{
+  margin-top: 16px;
+  margin-bottom:16px
+}
+.UserFollowerDivRow{
+  font-size:14px;
+  font-weight:lighter;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin: 8px 0;
+}
+
+.ButtonArea{
+  display:flex;
+  flex-direction:row;
+  margin-top: 8px;
+}
+
+.TwitterButton{
+  border-radius: 4px;
+  padding: 4px 16px;
+  margin-left: 8px ;
+  background-color: rgb(34, 195, 248);
+  color: white;
+  text-decoration: none;
+  max-width: 50%;
+}
+.SiteButton{
+  border-radius: 4px;
+  padding: 4px 16px;
+  background-color: #8C19D2;
+  color: white;
+  text-decoration: none;
+  max-width: 50%;
+}
+

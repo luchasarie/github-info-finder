@@ -1,0 +1,50 @@
+
+
+<div class="UserBoxContainer">
+  <div class="UserInfo">
+      <img class="UserPhoto" src="{{ userinfos.avatar_url }}" />
+    <div class="UserInfoText">
+      <div class="UserNameDiv">
+        <h2 class="UserName">{{ userinfos.name }}</h2>
+      </div>
+      <div class="UserTagDiv">
+        <span class="UserTag">@{{ userinfos.login }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="UserDescriptionDiv">
+    <span class="UserDescription">{{ userinfos.bio }}</span>
+  </div>
+  <div class="UserFollowerDiv">
+    <div class="UserFollowerDivRow">
+      <mat-icon class="UserIconImg" >group</mat-icon>
+      <span class="UserFollowerCount">{{ userinfos.followers }} seguidores</span>
+    </div>
+    <div class="UserFollowerDivRow">
+      <mat-icon class="UserIconImg" >favorite</mat-icon>
+      <span class="UserFollowingCount">{{ userinfos.following }} seguindo</span>
+    </div>
+  </div>
+  <div class="UserInfoDiv">
+    <div class="UserInfoDivRow">
+      <mat-icon class="UserIconImg" >business</mat-icon>
+      <span class="UserCompanyName">{{ userinfos.company|| "--"  }}</span>
+    </div>
+    <div class="UserInfoDivRow">
+      <mat-icon class="UserIconImg" >place</mat-icon>
+      <span class="UserLocation">{{ userinfos.location|| "--"  }}</span>
+    </div>
+    <div class="UserInfoDivRow">
+      <mat-icon class="UserIconImg" >mail</mat-icon>
+      <span class="UserEmail">{{ userinfos.email|| "--" }}</span>
+    </div>
+    <div class="UserInfoDivRow">
+      <mat-icon class="UserIconImg" >language</mat-icon>
+      <span class="UserSite">{{ userinfos.blog || "--" }}</span>
+    </div>
+  </div>
+  <div class="ButtonArea">
+    <a *ngIf="userinfos.blog != null && userinfos.blog != ''" class="SiteButton" href={{userinfos.blog}}>Visit Website</a>
+    <a *ngIf="userinfos.twitter_username != null && userinfos.blog != ''" class="TwitterButton" href="twitter.com/{{userinfos.twitter_username}}">Visit Twitter</a>
+  </div>
+</div>

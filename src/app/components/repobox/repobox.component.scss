@@ -1,0 +1,60 @@
+
+.mat-icon {
+  vertical-align: middle;
+  align-self:center;
+}
+.RepoContainerDiv {
+  max-width: 500px;
+  text-align: left;
+  margin-bottom: 32px;
+  border-bottom: 1px solid lightgray;
+  font-size: 16px;
+  padding-left: 8px;
+}
+a.RepoBoxLink {
+  text-decoration: none;
+  color: #4a5568;
+}
+
+.RepoBox {
+  text-decoration: none;
+}
+.RepoName {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.RepoDescription {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.RepoLowerRow {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  height:100%;
+}
+.RepoStars{
+  margin-right: 6px;
+  font-size: 16px;
+  max-height: 16px;
+  max-width:16px;
+  align-self:center;
+}
+.RepoDivider {
+  display:flex;
+  margin-left:12px;
+  margin-right:12px;
+}
+.RepoDividerIcon{
+  color:lightgray;
+  font-size: 8px;
+  max-height: 8px;
+  max-width:8px;
+  align-self:center;
+}
