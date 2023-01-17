@@ -5,6 +5,8 @@ Esse é um pequeno projeto criado pra um [desafio de vaga de desenvolvedor angul
 
 Esse projeto foi feito com Angular versão 15.1.1
 
+Uma versão live do aplicativo se encontra em [https://github-info-finder-petize.web.app/](https://github-info-finder-petize.web.app/)
+
 ## Instalação
 
 ### Plataforma e ferramentas
@@ -27,7 +29,6 @@ cd github-info-finder
 Use o comando abaixo para inicializar o cliente
 
 ```
-npm build
 npm start
 ```
 
