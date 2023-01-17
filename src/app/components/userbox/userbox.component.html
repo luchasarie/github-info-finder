@@ -15,17 +15,15 @@
   <div class="UserDescriptionDiv">
     <span class="UserDescription">{{ userinfos.bio }}</span>
   </div>
-  <div class="UserFollowerDiv">
-    <div class="UserFollowerDivRow">
+  <hr><div class="UserInfoDiv">
+    <div class="UserInfoDivRow">
       <mat-icon class="UserIconImg" >group</mat-icon>
       <span class="UserFollowerCount">{{ userinfos.followers }} seguidores</span>
     </div>
-    <div class="UserFollowerDivRow">
+    <div class="UserInfoDivRow">
       <mat-icon class="UserIconImg" >favorite</mat-icon>
       <span class="UserFollowingCount">{{ userinfos.following }} seguindo</span>
     </div>
-  </div>
-  <div class="UserInfoDiv">
     <div class="UserInfoDivRow">
       <mat-icon class="UserIconImg" >business</mat-icon>
       <span class="UserCompanyName">{{ userinfos.company|| "--"  }}</span>
@@ -44,7 +42,8 @@
     </div>
   </div>
   <div class="ButtonArea">
-    <a *ngIf="userinfos.blog != null && userinfos.blog != ''" class="SiteButton" href={{userinfos.blog}}>Visit Website</a>
-    <a *ngIf="userinfos.twitter_username != null && userinfos.blog != ''" class="TwitterButton" href="twitter.com/{{userinfos.twitter_username}}">Visit Twitter</a>
+    <a *ngIf="userinfos.blog != null && userinfos.blog != ''" class="SiteButton" href={{userinfos.blog}}>Website</a>
+    <a *ngIf="userinfos.twitter_username != null && userinfos.blog != ''" class="SiteButton" href="twitter.com/{{userinfos.twitter_username}}">Twitter</a>
   </div>
+  <a *ngIf="userinfos.html_url != null && userinfos.html_url != ''" class="SiteButtonLong" href={{userinfos.html_url}}>Github</a>
 </div>

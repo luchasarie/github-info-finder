@@ -26,13 +26,22 @@
     }
   }
 }
-
+.GitText{
+  font-weight: 300;
+font-size: 48px;
+line-height: 65px;
+margin-bottom: 24px;
+}
+.GitTextSmaller{
+  font-style: normal;
+  font-size: 24px;
+line-height: 29px;
+text-align: center;
+}
 .SearchDevs {
-  font-size: 48px;
-  @include for-size(desktop-up) {
-    font-size: 80px;
-  }
-  display: inline;
+  display: flex;
+  flex-direction: column;
+
 }
 .BlueText {
   color: #0069ca;
@@ -50,24 +59,44 @@
 }
 .SearchInputWrapper {
   position: relative;
-  margin-top: 24px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 .SearchInput {
-  border-color: black;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  height: 48px;
-  padding-left: 32px;
-  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: inter;
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 8px;
+  gap: 10px;
+  width: 60vw;
+  height:48px;
+  margin-bottom: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12.5px);
+  color: #aaaaaa;
+  border: 1px solid cyan;
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  transition:all 250ms;
   @include for-size(tablet-portrait-up) {
     width: 420px;
   }
 }
+
+.SearchInput:hover{
+  background: black;
+  color:white;
+}
 .SearchInput:focus {
   border-color: #8c19d2;
+  background:white;
+  color:black;
 }
 .SearchIcon {
   position: absolute;
@@ -83,11 +112,10 @@
   margin-top: 0;
 }
 .SearchButton {
-  display: none;
-  @include for-size(tablet-portrait-up) {
-    display: flex;
-    margin-top:0px;
-  }
+  background: linear-gradient(274.84deg, #00B2FF -19.35%, #5A09EC 112.52%);
+  background-color: #00B2FF;
+  border-radius: 10px;
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -97,11 +125,40 @@
   text-align: center;
   font-size: 18px;
   text-decoration: none;
-  background-color: #8c19d2;
   color: white;
-  margin-left: 16px;
+  transition:all 200ms;
 }
-
+.SearchButton:hover{
+  background: white;
+  color:black;
+}
 .SearchInside {
   margin: auto;
+  display:flex;
+  flex-direction: column;
+  padding: 0px;
+gap: 15px;
+align-items: center;
+}
+
+.LogoBig{
+  height: 128px;
+  width:128px;
+  align-content: center;
+
+}
+
+.AboutButton{
+  padding:16px;
+  color:white;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #FFFFFF;
+  backdrop-filter: blur(8px);
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 200ms;
+}
+.AboutButton:hover{
+  background: black;
+  border-color: purple;
 }

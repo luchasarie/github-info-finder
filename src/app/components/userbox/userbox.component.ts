@@ -11,7 +11,8 @@ export class UserboxComponent implements OnInit{
 
   constructor(){}
   ngOnInit(): void {
-
+    document.body.style.backgroundPosition = "bottom";
+    document.body.style.backgroundSize = "cover";
   }
 
 }

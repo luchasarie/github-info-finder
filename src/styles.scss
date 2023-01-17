@@ -1,4 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@mixin for-size($range) {
+  $phone-upper-boundary: 600px;
+  $tablet-portrait-upper-boundary: 900px;
+  $tablet-landscape-upper-boundary: 1200px;
+  $desktop-upper-boundary: 1800px;
 
+  @if $range == phone-only {
+    @media (max-width: #{$phone-upper-boundary - 1}) {
+      @content;
+    }
+  } @else if $range == tablet-portrait-up {
+    @media (min-width: $phone-upper-boundary) {
+      @content;
+    }
+  } @else if $range == tablet-landscape-up {
+    @media (min-width: $tablet-portrait-upper-boundary) {
+      @content;
+    }
+  } @else if $range == desktop-up {
+    @media (min-width: $tablet-landscape-upper-boundary) {
+      @content;
+    }
+  } @else if $range == big-desktop-up {
+    @media (min-width: $desktop-upper-boundary) {
+      @content;
+    }
+  }
+}
 html, body { height: 100%; }
-body { margin: 0; font-family: Inter, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Inter, "Helvetica Neue", sans-serif;
+  color:white;
+  background-color: black;
+  background-image: url('./assets/—Pngtree—purple\ wave\ 3d\ abstract\ element_5428818.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  @include for-size(phone-only) {background-size: 150% auto;background-position-y: 125%;};
+  @include for-size(tablet-portrait-up) {background-position-y: -10%;};
+  background-size:cover;
+}

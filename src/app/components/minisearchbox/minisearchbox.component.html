@@ -1,12 +1,7 @@
 <div class="SearchWrapper">
   <a [routerLink]="''" class="SearchDevs">
-    <span class="BlueText">Search</span><span class="PurpleText"> d_evs</span>
+    <img src="../../../assets/GIT_FIND.png" class="LogoBig" />
   </a>
-  <div class="SearchInputWrapper">
-    <div>
       <input (keydown.enter)="search()" class="SearchInput" [(ngModel)]="Search" placeholder="Pesquisar" />
-      <i class="SearchIcon"><mat-icon>search</mat-icon></i>
-    </div>
     <a class="SearchButton" (click)="search()">Search</a>
-  </div>
 </div>
